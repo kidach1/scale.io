@@ -1,7 +1,7 @@
 {
-  "name": "ec2autoscale",
-  "version": "0.0.2",
-  "description": "autoscaling for websocket based EC2 cluster.",
+  "name": "scale.io",
+  "version": "0.0.1",
+  "description": "loadbalancing and autoscaling for websocket based EC2 cluster.",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
@@ -18,5 +18,8 @@
     "moment": "~2.10",
     "moment-timezone": "~0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
 }
