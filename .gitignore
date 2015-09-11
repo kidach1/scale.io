@@ -1,0 +1,9 @@
+/node_modules
+tags
+*.swp
+*.log*
+*kumogata.rb
+config/development.yaml
+config/*production.yaml
+result.json
+.DS_Store
