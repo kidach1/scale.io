@@ -1,0 +1,25 @@
+{
+  "appenders": [
+    {
+      "type": "dateFile",
+      "category": "autoscale",
+      "filename": "logs/autoscale.log",
+      "pattern": "-yyyy-MM-dd",
+      "backups": 3
+    },
+    {
+      "type": "dateFile",
+      "category": "loadbalance",
+      "filename": "logs/loadbalance.log",
+      "pattern": "-yyyy-MM-dd",
+      "backups": 3
+    },
+    {
+      "type": "dateFile",
+      "category": "schedulerMonitor",
+      "filename": "logs/schedulerMonitor.log",
+      "pattern": "-yyyy-MM-dd",
+      "backups": 3
+    }
+  ]
+}
