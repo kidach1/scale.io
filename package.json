@@ -4,7 +4,7 @@
   "description": "loadbalancing and autoscaling for websocket based EC2 cluster.",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --harmony test/lib/*"
+    "test": "NODE_ENV=test mocha --harmony test/lib/"
   },
   "author": "kidach1",
   "dependencies": {
@@ -12,18 +12,21 @@
     "socket.io-client": "1.3.4",
     "redis": "0.12.1",
     "aws-sdk": "2.1.10",
-    "should": "~4.6",
-    "mocha": "~2.1",
-    "sinon": "~1.12.2",
     "log4js": "0.6.22",
     "co": "4.1.0",
     "underscore": "~1.7",
     "config": "1.12.0",
+    "node-slack": "0.0.7",
     "moment": "~2.10",
-    "moment-timezone": "~0.4"
+    "moment-timezone": "~0.4",
+    "js-yaml": "3.2.7"
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.1.0"
+    "mocha": "^2.1.0",
+    "should": "~4.6",
+    "mocha": "~2.1",
+    "commander": "",
+    "sinon": "~1.12.2"
   }
 }
