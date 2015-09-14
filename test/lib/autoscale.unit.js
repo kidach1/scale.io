@@ -70,10 +70,10 @@ describe('autoscale', () => {
     });
   });
 
-  describe('_isScaleInAvailable', () => {
+  describe('_isScalableTime', () => {
     // TODO: use stub for moment.
     it('', () => {
-      var res = this.autoscale._isScaleInAvailable();
+      var res = this.autoscale._isScalableTime(10, 12);
       res.should.eql(false);
     });
   });
