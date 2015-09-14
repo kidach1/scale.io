@@ -38,6 +38,7 @@ ec2HostTagForLobby: "^ec2-tag-name-for-lobby$"
 ec2HostTagForGame: "^ec2-tag-name-for-game$"
 redHostThreshold: 350
 minimumGreenHostsNum: 2
+specifiedTimeGreenHostsNum: 40
 connNumForRedHost: 999999
 redisKeyForLobbyLoadbalancing: "redis-key-for-lobby"
 redisKeyForGameLoadbalancing: "redis-key-for-game"
@@ -51,10 +52,12 @@ autoRestartMonitorIntervalSec: 15
 resetLbKeysRoutineIntervalSec: 180
 scaleInAvailableStartAt: 4
 scaleInAvailableEndAt: 5
+forceScaleOutStartAt: 18
+forceScaleOutEndAt: 23
 serverTypeNum: 2
-kumogataUpdateCmd: ""
-restartCmd: ""
-notifyRoomNumMessage: ""
+kumogataUpdateCmd: "cloudformation-update-cmd"
+restartCmd: "restart-cmd"
+notifyRoomNumMessage: "message-by-slack"
 
 monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
 monitoredProcess: "game"
