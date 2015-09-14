@@ -1,4 +1,4 @@
 # scale.io
-autoscaling module for websocket based EC2 cluster.
+loadbalancing and autoscaling module for websocket based EC2 cluster.
 
 wip
