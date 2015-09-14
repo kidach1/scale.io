@@ -1,8 +1,3 @@
-dbConfig:
-  host: "127.0.0.1"
-  database: "your-db-name"
-  user: "root"
-
 redisConfig:
   host: "127.0.0.1"
 
@@ -17,49 +12,40 @@ slack:
   botname: "your-bot-name"
   mention: "<your-account-name>"
 
-bucketName: "buckt-name"
-
-gameTimeSec: 180
-startMarginSec: 10
-checkConnIntervalSec: 0.3
-checkTimesLimit: 30
-forceDoneTimeSec: 10
-revengeForceStartTimeSec: 0.7
-waitForClientReadySec: 0.01
-repeatForOvercomingPacketLoss: 3
-
-addMatchingThresholdNumForExtra: 20
-intervalForLoadBalancingSec: 0.6
-intervalForAutoscalingSec: 30
-intervalForHostInfoUpdateSec: 30
-cfnStackName: "stack-name"
-ec2HostTag: "^ec2-tag-name"
-ec2HostTagForLobby: "^ec2-tag-name-for-lobby$"
-ec2HostTagForGame: "^ec2-tag-name-for-game$"
-redHostThreshold: 350
-minimumGreenHostsNum: 2
-specifiedTimeGreenHostsNum: 40
-connNumForRedHost: 999999
-redisKeyForLobbyLoadbalancing: "redis-key-for-lobby"
-redisKeyForGameLoadbalancing: "redis-key-for-game"
-scaleOutThreshold: 20
-scaleInThreshold: 3
-scaleOutMinimumIntervalSec: 180
-scaleInMinimumIntervalSec: 3600
-autoRestartCpuUsageThresholdForApp: 10
-autoRestartCpuUsageThresholdForLB: 80
-autoRestartMonitorIntervalSec: 15
-resetLbKeysRoutineIntervalSec: 180
-scaleInAvailableStartAt: 4
-scaleInAvailableEndAt: 5
-forceScaleOutStartAt: 18
-forceScaleOutEndAt: 23
-serverTypeNum: 2
-kumogataUpdateCmd: "cloudformation-update-cmd"
-restartCmd: "restart-cmd"
-notifyRoomNumMessage: "message-by-slack"
-
+# for schedulerMonitor
 monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
 monitoredProcess: "game"
 monitoringIntervalSec: 30
 decisionIntervalSec: 120
+
+# for loadbalancing
+redHostThreshold: 350
+connNumForRedHost: 999999
+ec2HostTagForLobby: "^ec2-tag-name-for-lobby$"
+ec2HostTagForGame: "^ec2-tag-name-for-game$"
+intervalForLoadBalancingSec: 0.6
+intervalForAutoscalingSec: 30
+intervalForHostInfoUpdateSec: 30
+redisKeyForLobbyLoadbalancing: "redis-key-for-lobby"
+redisKeyForGameLoadbalancing: "redis-key-for-game"
+
+# for autoscaling
+restartCmd: "restart-cmd"
+cfnStackName: "stack-name"
+serverTypeNum: 2
+scaleOutThreshold: 20
+scaleInThreshold: 3
+kumogataUpdateCmd: "cloudformation-update-cmd"
+minimumGreenHostsNum: 2
+forceScaleOutStartAt: 18
+forceScaleOutEndAt: 23
+scaleInAvailableStartAt: 4
+scaleInAvailableEndAt: 5
+notifyRoomNumMessage: "message-by-slack"
+scaleInMinimumIntervalSec: 3600
+scaleOutMinimumIntervalSec: 180
+specifiedTimeGreenHostsNum: 40
+autoRestartMonitorIntervalSec: 15
+resetLbKeysRoutineIntervalSec: 180
+autoRestartCpuUsageThresholdForLB: 80
+autoRestartCpuUsageThresholdForApp: 10
