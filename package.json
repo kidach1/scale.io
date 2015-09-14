@@ -4,7 +4,7 @@
   "description": "loadbalancing and autoscaling for websocket based EC2 cluster.",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "NODE_ENV=test mocha --harmony test/lib/*"
   },
   "author": "kidach1",
   "dependencies": {
