@@ -51,6 +51,10 @@ autoRestartMonitorIntervalSec: 15
 resetLbKeysRoutineIntervalSec: 180
 scaleInAvailableStartAt: 4
 scaleInAvailableEndAt: 5
+serverTypeNum: 2
+kumogataUpdateCmd: "cloudformation-update-cmd"
+restartCmd: "restart-cmd"
+notifyRoomNumMessage: "message-by-slack"
 
 monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
 monitoredProcess: "game"
