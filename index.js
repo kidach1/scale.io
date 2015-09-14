@@ -1,2 +1,2 @@
-var autoscale = require('./lib/autoscale');
-module.exports = autoscale;
+var loadBalance = require('./lib/loadBalance');
+module.exports = loadBalance;
