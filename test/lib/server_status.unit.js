@@ -21,7 +21,7 @@ describe('server_status', () => {
                 PublicDnsName: 'ec2-11-11-11-11.ap-northeast-1.compute.amazonaws.com',
                 Tags: [
                   { Key: 'aws:cloudformation:logical-id', Value: 'Realtime51' },
-                  { Key: 'Name', Value: 'prod-realtime-lobby' }
+                  { Key: 'Name', Value: 'ec2-tag-name-for-lobby' }
                 ]
               }
             ]
