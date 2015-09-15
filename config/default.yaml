@@ -20,7 +20,7 @@ monitoringIntervalSec: 30
 decisionIntervalSec: 120
 
 # for loadbalancing
-redHostThreshold: 350
+timeoutThresholdForRedHost: 350
 connNumForRedHost: 999999
 ec2HostTagForLobby: "^ec2-tag-name-for-lobby$"
 ec2HostTagForGame: "^ec2-tag-name-for-game$"
