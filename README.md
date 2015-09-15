@@ -19,6 +19,14 @@ set `config/default.yaml` or `config/env.yaml` your main app.
 
 Example is [this](https://github.com/kidach1/scale.io/blob/master/config/default.yaml.example).
 
+## execute
+
+```
+node --harmony scale.js
+```
+
+## config details
+
 
 #### conf for redis
 
@@ -40,17 +48,9 @@ enter your slack info.
 enter info (details are here).
 
 
-## execute
-
-```
-node --harmony scale.js
-```
-
-
-## config details
-
-
 #### conf for loadbalancing
+
+wip.
 
 |key|desc|
 |---|---|
