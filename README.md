@@ -1,7 +1,7 @@
 # scale.io
 loadbalancing and autoscaling module for websocket based EC2 cluster.
 
-- *no ELB* loadbalancing & autoscaling
+- **no ELB** loadbalancing & autoscaling
 
 # how to use
 
@@ -13,22 +13,22 @@ require('scale.io');
 
 ## set config yml file
 
-]config/default.yaml` or `config/<environment>.yaml`
+config/default.yaml` or `config/`<environment`>.yaml`
 
 
-### conf for redis
+#### conf for redis
 
 enter your redis host & port.
 
-### conf for aws
+#### conf for aws
 
 enter your access key id, secret access key and region.
 
-### conf for slack
+#### conf for slack
 
 enter your slack info.
 
-### conf for loadbalancing / autoscaling / monitoring
+#### conf for loadbalancing / autoscaling / monitoring
 
 enter info (details are here).
 
@@ -41,7 +41,7 @@ node --harmony scale.js
 
 ## config details
 
-### conf for loadbalancing
+#### conf for loadbalancing
 
 |key|desc|
 |---|---|
@@ -53,7 +53,7 @@ node --harmony scale.js
 |redisKeyForLobbyLoadbalancing||
 |redisKeyForGameLoadbalancing||
 
-### conf for autoscaling
+#### conf for autoscaling
 
 |key|desc|
 |---|---|
@@ -76,7 +76,7 @@ node --harmony scale.js
 |autoRestartCpuUsageThresholdForLB||
 |autoRestartCpuUsageThresholdForApp||
 
-### conf for monitor
+#### conf for monitor
 
 |key|desc|
 |---|---|
