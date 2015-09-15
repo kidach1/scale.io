@@ -13,12 +13,6 @@ slack:
   botname: "your-bot-name"
   mention: "<your-account-name>"
 
-# for schedulerMonitor
-monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
-monitoredProcess: "game"
-monitoringIntervalSec: 30
-decisionIntervalSec: 120
-
 # for loadbalancing
 timeoutThresholdForRedHost: 350
 connNumForRedHost: 999999
@@ -32,11 +26,11 @@ redisKeyForGameLoadbalancing: "redis-key-for-game"
 
 # for autoscaling
 restartCmd: "restart-cmd"
-cfnStackName: "stack-name"
+cfnStackName: "cloudformation-stack-name"
 serverTypeNum: 2
 scaleOutThreshold: 20
 scaleInThreshold: 3
-kumogataUpdateCmd: "cloudformation-update-cmd"
+cfnUpdateCmd: "cloudformation-update-cmd"
 minimumGreenHostsNum: 2
 forceScaleOutStartAt: 18
 forceScaleOutEndAt: 23
@@ -50,3 +44,9 @@ autoRestartMonitorIntervalSec: 15
 resetLbKeysRoutineIntervalSec: 180
 autoRestartCpuUsageThresholdForLB: 80
 autoRestartCpuUsageThresholdForApp: 10
+
+# for schedulerMonitor
+monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
+monitoredProcess: "game"
+monitoringIntervalSec: 30
+decisionIntervalSec: 120
