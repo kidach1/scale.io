@@ -70,10 +70,10 @@ describe('autoscale', () => {
     });
   });
 
-  describe('_isScaleInAvailable', () => {
+  describe('_isBetween', () => {
     // TODO: use stub for moment.
     it('', () => {
-      var res = this.autoscale._isScaleInAvailable();
+      var res = this.autoscale._isBetween(10, 12);
       res.should.eql(false);
     });
   });
