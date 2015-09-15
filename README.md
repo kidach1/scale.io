@@ -13,8 +13,9 @@ require('scale.io');
 
 ## set config yml file
 
-config/default.yaml` or `config/`<environment`>.yaml`
+`config/default.yaml` or `config/env.yaml`
 
+example is [this](https://github.com/kidach1/scale.io/blob/master/config/default.yaml.example).
 
 #### conf for redis
 
