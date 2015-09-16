@@ -19,9 +19,6 @@ loadbalancing and autoscaling module for websocket based EC2 cluster.
 - multi-AZ based
 - auto fail over
 
-wip
-
-
 
 # how to use
 
@@ -63,7 +60,7 @@ enter some info (details are below).
 
 #### conf for loadbalancing
 
-correspond to A and B in [this figure](https://github.com/kidach1/scale.io#architecture)
+Correspond to A and B in above structure chart.
 
 |key|desc|
 |---|---|
@@ -80,7 +77,7 @@ correspond to A and B in [this figure](https://github.com/kidach1/scale.io#archi
 
 #### conf for autoscaling
 
-correspond to C in [this figure](https://github.com/kidach1/scale.io#architecture)
+Correspond to C in above structure chart.
 
 |key|desc|
 |---|---|
@@ -105,7 +102,7 @@ correspond to C in [this figure](https://github.com/kidach1/scale.io#architectur
 
 #### conf for monitor
 
-correspond to C in [this figure](https://github.com/kidach1/scale.io#architecture)
+Correspond to D in above structure chart.
 
 |key|desc|
 |---|---|
