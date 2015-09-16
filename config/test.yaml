@@ -44,7 +44,6 @@ specifiedTimeGreenHostsNum: 40
 autoRestartMonitorIntervalSec: 15
 resetLbKeysRoutineIntervalSec: 180
 autoRestartCpuUsageThresholdForLB: 80
-autoRestartCpuUsageThresholdForApp: 10
 
 # for schedulerMonitor
 monitoredHost: "ec2-__-__-__-__.ap-northeast-1.compute.amazonaws.com"
