@@ -63,7 +63,7 @@ enter some info (details are below).
 
 #### conf for loadbalancing
 
-wip.
+correspond to A and B in [this figure](https://github.com/kidach1/scale.io#architecture)
 
 |key|desc|
 |---|---|
@@ -79,6 +79,8 @@ wip.
 
 
 #### conf for autoscaling
+
+correspond to C in [this figure](https://github.com/kidach1/scale.io#architecture)
 
 |key|desc|
 |---|---|
@@ -98,14 +100,16 @@ wip.
 |specifiedTimeGreenHostsNum|instance number will be change to this value between specified time.|
 |restartCmd|restart autoscale process commond.|
 |autoRestartCpuUsageThresholdForLB|if cpu usage exceed this value, process restart.|
-|autoRestartMonitorIntervalSec|monitoringx span for auto restart.|
+|autoRestartMonitorIntervalSec|monitoring span for auto restart.|
 
 
 #### conf for monitor
 
+correspond to C in [this figure](https://github.com/kidach1/scale.io#architecture)
+
 |key|desc|
 |---|---|
-|monitoredHost||
-|monitoredProcess||
-|monitoringIntervalSec||
-|decisionIntervalSec||
+|monitoredHost|monitored target.|
+|monitoredProcess|like 'game', 'lobby'|
+|monitoringIntervalSec|monitoring span|
+|decisionIntervalSec|monitored process does not reply throughout this span, it is regard as died.|
