@@ -67,13 +67,15 @@ wip.
 
 |key|desc|
 |---|---|
-|timeoutThresholdForRedHost||
-|connNumForRedHost||
-|ec2HostTagForGame||
-|intervalForAutoscalingSec||
-|intervalForHostInfoUpdateSec||
-|redisKeyForLobbyLoadbalancing||
-|redisKeyForGameLoadbalancing||
+|timeoutThresholdForRedHost|Getting no response within this value(ms), host is regard as RedHost(=DyingHost).|
+|connNumForRedHost|RedHost is expressed by this value at loadbalancing log.|
+|ec2HostTagKey|EC2 tag key|
+|ec2HostTagValueForLobby|EC2 tag value for lobby server.|
+|ec2HostTagValueForGame|EC2 tag value for game server.|
+|intervalForAutoscalingSec|cycle time of autoscale watching process|
+|intervalForHostInfoUpdateSec|cycle time of loadbalancing process|
+|redisKeyForLobbyLoadbalancing|redis key name for lobby loadbalance.|
+|redisKeyForGameLoadbalancing|redis key name for game loadbalance.|
 
 
 #### conf for autoscaling
