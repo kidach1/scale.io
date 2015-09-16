@@ -16,8 +16,9 @@ slack:
 # for loadbalancing
 timeoutThresholdForRedHost: 350
 connNumForRedHost: 999999
-ec2HostTagForLobby: "^ec2-tag-name-for-lobby$"
-ec2HostTagForGame: "^ec2-tag-name-for-game$"
+ec2HostTagKey: "^Name$"
+ec2HostTagValueForLobby: "^ec2-tag-name-for-lobby$"
+ec2HostTagValueForGame: "^ec2-tag-name-for-game$"
 intervalForLoadBalancingSec: 0.6
 intervalForAutoscalingSec: 30
 intervalForHostInfoUpdateSec: 30
