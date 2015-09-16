@@ -82,24 +82,23 @@ wip.
 
 |key|desc|
 |---|---|
-|restartCmd||
-|cfnStackName||
-|serverTypeNum||
-|scaleOutThreshold||
-|scaleInThreshold||
-|cfnUpdateCmd||
-|minimumGreenHostsNum||
-|forceScaleOutStartAt||
-|forceScaleOutEndAt||
-|scaleInAvailableStartAt||
-|scaleInAvailableEndAt||
-|notifyRoomNumMessage||
-|scaleInMinimumIntervalSec||
-|scaleOutMinimumIntervalSec||
-|specifiedTimeGreenHostsNum||
-|autoRestartMonitorIntervalSec||
-|autoRestartCpuUsageThresholdForLB||
-|autoRestartCpuUsageThresholdForApp||
+|cfnStackName|stack name of cloudformation.|
+|serverTypeNum|server type number. if you use lobby and game, enter 2.|
+|scaleOutThreshold|average connection number of instances for scale out.|
+|scaleInThreshold|average connection number of instances for scale in.|
+|cfnUpdateCmd|update cloudformation command.|
+|minimumGreenHostsNum|falling below this value, scale out starts.|
+|forceScaleOutStartAt|scale out forced to start after this time.|
+|forceScaleOutEndAt|scale out forced to start before this time.|
+|scaleInAvailableStartAt|scale in can be started after this time.|
+|scaleInAvailableEndAt|scale in can be started after this time.|
+|notifyRoomNumMessage|notifying message by slack.|
+|scaleInMinimumIntervalSec|scale in can be started countinuously after this interval.|
+|scaleOutMinimumIntervalSec|scale out can be started countinuously after this interval.|
+|specifiedTimeGreenHostsNum|instance number will be change to this value between specified time.|
+|restartCmd|restart autoscale process commond.|
+|autoRestartCpuUsageThresholdForLB|if cpu usage exceed this value, process restart.|
+|autoRestartMonitorIntervalSec|monitoringx span for auto restart.|
 
 
 #### conf for monitor
