@@ -47,24 +47,18 @@ node --harmony scale.js
 ## config details
 
 
-#### conf for redis
+### conf for redis / aws / slack
 
-enter your redis host & port.
+enter your
 
-
-#### conf for aws
-
-enter your access key id, secret access key and region.
-
-
-#### conf for slack
-
-enter your slack info.
+- redis host & port
+- access key id, secret access key and region
+- slack info
 
 
-#### conf for loadbalancing / autoscaling / monitoring
+### conf for loadbalancing / autoscaling / monitoring
 
-enter info (details are here).
+enter some info (details are below).
 
 
 #### conf for loadbalancing
