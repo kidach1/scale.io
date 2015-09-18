@@ -30,7 +30,7 @@ restartCmd: "restart-cmd"
 cfnStackName: "cloudformation-stack-name"
 serverTypeNum: 2
 scaleOutThreshold: 20
-scaleInThreshold: 3
+scaleInThreshold: 1
 cfnUpdateCmd: "cloudformation-update-cmd"
 minimumGreenHostsNum: 2
 forceScaleOutStartAt: 18
