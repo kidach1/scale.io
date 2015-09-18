@@ -1,6 +1,6 @@
 {
   "name": "scale.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "loadbalancing and autoscaling for websocket based EC2 cluster.",
   "main": "index.js",
   "scripts": {
