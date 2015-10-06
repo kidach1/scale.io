@@ -6,7 +6,7 @@ loadbalancing and autoscaling module for websocket based EC2 cluster without ELB
 
 - **no ELB**
 
-![architecture](https://qiita-image-store.s3.amazonaws.com/0/48274/610eba46-c978-20ec-f4b0-6c417c4057df.png)
+![architecture](https://qiita-image-store.s3.amazonaws.com/0/48274/ecfbfbdb-ae8a-b377-de5a-a11b158f0daa.png)
 
 - slack based monitoring
 
