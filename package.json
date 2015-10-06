@@ -19,6 +19,7 @@
     "node-slack": "0.0.7",
     "moment": "~2.10",
     "moment-timezone": "~0.4",
+    "rx": "~4.0.0",
     "js-yaml": "3.2.7"
   },
   "license": "MIT",
