@@ -9,67 +9,6 @@ describe('autoscale', () => {
     this.autoscale = new Autoscale("lobby");
   });
 
-  describe('_getOddAttributes', () => {
-    it('', () => {
-      var ipAndConnNumsStr = ['ec2-11-11-11-11', '1', 'ec2-11-11-11-11', '2', 'ec2-11-11-11-11', '3'];
-      var res = this.autoscale._getOddAttributes(ipAndConnNumsStr);
-      res.should.eql(['1', '2', '3']);
-    });
-  });
-
-  describe('_parseInt4Arr', () => {
-    it('', () => {
-      var connNumsStr = ['1', '2', '3'];
-      var res = this.autoscale._parseInt4Arr(connNumsStr);
-      res.should.eql([1, 2, 3]);
-    });
-  });
-
-  describe('_greenHostsFrom', () => {
-    it('', () => {
-      var connNums = [1, 2, 3, 999999];
-      var res = this.autoscale._greenHostsFrom(connNums);
-      res.should.eql([1, 2, 3]);
-    });
-  });
-
-  describe('_checkByMinimumHostNum', () => {
-    it('is under minimum num', () => {
-      var connNumsOfGreenHosts = [1, 2];
-      var res = this.autoscale._checkByMinimumHostNum(connNumsOfGreenHosts);
-      res.should.eql(true);
-    });
-    it('is over minimum num', () => {
-      var connNumsOfGreenHosts = [1, 2, 3];
-      var res = this.autoscale._checkByMinimumHostNum(connNumsOfGreenHosts);
-      res.should.eql(false);
-    });
-  });
-
-  describe('_sumFrom', () => {
-    it('', () => {
-      var connNums = [1, 2, 3];
-      var res = this.autoscale._sumFrom(connNums);
-      res.should.eql(6);
-    });
-  });
-
-  describe('_connNumsOfHavingConnsHostsFrom', () => {
-    it('', () => {
-      var connNums = [1, 2, 3];
-      var res = this.autoscale._connNumsOfHavingConnsHostsFrom(connNums);
-      res.should.eql([2, 3]);
-    });
-  });
-
-  describe('_roomFrom', () => {
-    it('', () => {
-      var connNumsOfhavingConnsHosts = [2, 3, 4, 5];
-      var res = this.autoscale._roomFrom(connNumsOfhavingConnsHosts);
-      res.should.eql(2);
-    });
-  });
-
   describe('_isBetween', () => {
     // TODO: use stub for moment.
     it('', () => {
